@@ -1,7 +1,7 @@
 <template>
   <h1>Reaction timer</h1>
   <button @click="start" :disabled="isPlaying">Play</button>
-  <p v-if="showResult">Reaction: {{score}} ms</p>
+  <!-- <p v-if="showResult">Reaction: {{score}} ms</p> -->
   <Block v-if="isPlaying" :delay="delay" @end="endGame" />
   <Results v-if="showResult" :score="score" />
 </template>
